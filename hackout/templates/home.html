@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'app1/dashboard.css' %}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="{% static 'app1/logo.png' %}" alt="Logo">
+        </div>
+        <div class="buttons">
+            <!-- Updated the link to point to 'generate_packing_list_api' -->
+            <a href="{% url 'input' %}" class="button">Generate List</a>
+    
+        </div>
+    </header>
+
+    <div class="tiles-container">
+        <!-- You can dynamically generate these tiles based on your data -->
+        <div class="tile">
+            <h2>Trip to Paris</h2>
+            <p>Generated on: Jan 10, 2023</p>
+            <a href="#" class="view-button">View List</a>
+        </div>
+        <div class="tiles-container">
+          <!-- You can dynamically generate these tiles based on your data -->
+        <div class="tile">
+              <h2>Trip to Paris</h2>
+              <p>Generated on: Jan 10, 2023</p>
+              <a href="#" class="view-button">View List</a>
+        </div>
+        <div class="tiles-container">
+          <!-- You can dynamically generate these tiles based on your data -->
+        <div class="tile">
+              <h2>Trip to Paris</h2>
+              <p>Generated on: Jan 10, 2023</p>
+              <a href="#" class="view-button">View List</a>
+        </div>
+        <!-- Add more tiles as needed -->
+    </div>
+</body>
+</html>
